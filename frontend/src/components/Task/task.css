@@ -1,0 +1,100 @@
+.wrapper-add-to-do {
+  margin: 50px 0 50px;
+}
+
+.wrapper-add-to-do input {
+  width: 400px;
+  flex: 1;
+}
+
+.wrapper-add-to-do button:not(:disabled) {
+  color: var(--colorWhite);
+  background-color: var(--colorPrimary);
+}
+
+.wrapper-add-to-do button:hover:not(:disabled) {
+  background-color: var(--colorPrimaryHover);
+  opacity: 0.5;
+}
+
+.wrapper-add-to-do button:disabled {
+  background-color: var(--colorPrimaryHover);
+  opacity: 0.4;
+  color: var(--colorWhite);
+}
+
+.filter {
+  margin-bottom: 10px;
+}
+
+.status-filter {
+  border-radius: 8px;
+  transition: all linear 0.3s;
+}
+
+.status-filter.active {
+  background-color: var(--colorPrimary);
+  color: var(--colorWhite);
+}
+
+table {
+  border-collapse: collapse;
+  padding: 0 50px;
+}
+
+tr {
+  border-bottom: 2px solid #ececec;
+  height: 45px;
+}
+
+thead {
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+.wrapper-task-list {
+  overflow: auto;
+  padding: 0 10px;
+}
+
+.wrapper-task-list::-webkit-scrollbar {
+  scrollbar-width: thin !important;
+  background: var(--colorWhite);
+  height: 4px;
+  width: 2px;
+  border-radius: 4px;
+  margin-left: 50px;
+}
+
+
+.wrapper-task-list::-webkit-scrollbar-thumb {
+  background: var(--colorPrimary);
+  border-radius: 8px;
+}
+
+.filter .btn-plain {
+  min-width: 70px;
+  transition: all linear 0.3s;
+}
+
+.filter .btn-plain:hover {
+  opacity: 0.5;
+  background-color: var(--colorPrimary);
+  color: var(--colorWhite);
+}
+
+.wrapper-edit-task {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper-edit-task button {
+  margin-top: 50px;
+}
+
+.wrapper-edit-task button:hover {
+  background-color: var(--colorPrimaryHover);
+  opacity: 0.5;
+}

@@ -1,0 +1,73 @@
+.modal-backdrop.auth {
+  background-color: var(--colorBg);
+}
+
+.wrapper-auth {
+  background-color: var(--colorWhite);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 500px;
+}
+
+.form-group {
+  display: flex;
+  margin-bottom: 16px;
+  flex-direction: column;
+}
+
+.form-label,
+.form-message {
+  text-align: left;
+}
+
+.form-message {
+  color: var(--colorRed);
+  font-size: 15px;
+  margin: 5px 0 0 5px;
+
+}
+
+.form-label {
+  font-weight: 700;
+  padding-bottom: 6px;
+  font-size: 15px;
+}
+
+
+.wrapper-auth label {
+  display: inline-block;
+  margin: 20px 0 0;
+}
+
+.wrapper-auth p {
+  text-align: center;
+  cursor: pointer;
+  color: rgb(5, 5, 255);
+}
+
+.wrapper-auth p:hover {
+  opacity: 0.5;
+}
+
+.wrapper-auth button {
+  margin-top: 80px;
+  font-weight: 600;
+  color: var(--colorWhite);
+
+}
+
+.wrapper-auth button:not(:disabled) {
+  background-color: var(--colorPrimary);
+}
+
+.wrapper-auth button:hover:not(:disabled) {
+  background-color: var(--colorPrimaryHover);
+  opacity: 0.5;
+}
+
+.wrapper-auth button:disabled {
+  background-color: var(--colorPrimaryHover);
+  opacity: 0.5;
+  color: var(--colorWhite);
+}
